@@ -1,0 +1,25 @@
+body{
+    background: rgba(36, 20, 135, 0.97)
+}
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 20px solid rgba(255, 0, 255, 0.3);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-top: 20px solid #fff;
+    border-radius: 50%;
+    animation: animate 1s infinite linear;
+}
+@keyframes animate{
+    0% {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
